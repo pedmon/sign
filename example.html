@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META HTTP-EQUIV="refresh" CONTENT="3600">
+	<title>Sign Display</title>
+
+	<link rel="stylesheet" href="style.css" type="text/css">
+
+<script type="text/javascript">
+
+   function myEndedListener(){
+      var myVideo = document.getElementsByTagName('video')[0];
+      myVideo.addEventListener('ended',myNewSrc,false);
+   }
+
+   var position = 0;
+   var videoList=new Array(
+    "movie01.theora.ogv",
+    "movie02.theora.ogv",
+    "movie03.theora.ogv"
+);
+
+   function myNewSrc() {
+      var myVideo = document.getElementsByTagName('video')[0];
+      if(++position >= videoList.length) {
+         position = 0;
+      }
+      myVideo.src=videoList[position];
+      myVideo.load();
+      myVideo.play();
+   }
+
+	document.documentElement.style.overflow = 'hidden';
+
+   // left keyboard arrow keys cycle through videos
+   document.onKeyDown = function(event) {
+     if (!event)
+          event = window.event;
+     var code = event.keyCode;
+     if (event.charCode && code == 0)
+          code = event.charCode;
+     switch(code) {
+          case 39:
+              // Key right.
+              myNewSrc();
+              break;
+     }
+     event.preventDefault();
+     };
+
+</script>
+
+
+</head>
+
+<body class="home" onload="myEndedListener()">
+
+	<video src="movie01.ogv" autoplay width="1300" height="900" id="video"></video>
+
+	<aside>
+
+<!--Begin-->
+
+<!--End-->
+
+	<img src="status.jpg" id="status">
+      
+	</aside>
+
+	<footer>
+		<img src="logo.jpg" height="100" id="logo">
+		<h4>Institute for Awesomeness</h4>
+		<h5>at Super Cool Place</h5>
+	</footer>
+</body>
+</html>

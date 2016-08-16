@@ -1,0 +1,88 @@
+/* ~~~~~~~~~ generic ~~~~~~~~~~ */
+
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+	margin: 0;
+	padding: 0;
+}
+img {
+	vertical-align: bottom;
+}
+img, fieldset {
+	border: 0;
+}
+html {
+	overflow-y: scroll;
+}
+header, nav, section, article, figure, aside, footer {
+	display: block;	
+}
+
+/* ~~~~~~~~~ common ~~~~~~~~~~ */
+
+body, select, input, textarea {
+	font: 0.625em/1.4 tahoma, verdana, arial, helvetica, sans-serif;
+	color: #FFF;
+}
+body {
+	 background: #000;
+}
+h1 {
+	font-weight: normal;
+	color: #FFF;
+	font: 3.2em/1.4 arial, 'times new roman', times, serif;
+	margin: 0.2em 0 0;
+}
+h2 {
+	font-weight: normal;
+	color: #FFF;
+	font: 2.4em/1.4 arial, 'times new roman', times, serif;
+	margin: 0.2em 0;	
+}
+
+h3 {
+	font-weight: normal;
+	color: #FFF;
+	font: 1.6em/1.4 arial, 'times new roman', times, serif;
+	margin: 0.2em 0;	
+}
+
+h4 {
+	font-weight: normal;
+	color: #FFF;
+	font: 3.2em/1.4 times, 'times new roman', times, serif;
+	margin: 0.2em 0;	
+}
+
+h5 {
+	font-weight: normal;
+	color: #FFF;
+	font: 1.6em/1.4 times, 'times new roman', times, serif;
+	margin: 0.2em 0;	
+}
+
+section p, section ul, section ol,
+aside p, aside ul, aside ol {
+	font-size: 1.4em;
+	margin: 1em 0;
+}
+
+
+/* ~~~~~~~~~ aside ~~~~~~~~~~ */
+
+aside {
+	float: right;
+	width: 600px;
+}
+			
+/* ~~~~~~~~~ footer ~~~~~~~~~~ */
+			
+footer {
+	width: 1500px;
+	margin: 20px auto;
+	font: times;
+	font-size: 1.4em;
+	text-align: left;
+}
