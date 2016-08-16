@@ -7,8 +7,8 @@ use iCal::Parser;
 use Data::Dumper;
 
 #First we need to open up our file handles#
-open (infile, '<itc.html');
-open (outfile, '>itc-new.html');
+open (infile, '<example.html');
+open (outfile, '>example-new.html');
 
 #We are now going to copy the old file into the new file#
 #This variable stores where the beginning of the editable section is#
